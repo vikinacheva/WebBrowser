@@ -12,9 +12,28 @@ namespace WebBrowser
 {
     public partial class AccountForm : Form
     {
-        public AccountForm()
+        private UserAccount currentUser;
+
+        public AccountForm(UserAccount user)
         {
             InitializeComponent();
+            currentUser = user;
+        }
+
+        private void AccountForm_Load(object sender, EventArgs e)
+        {
+            lblUsername.Text = currentUser.Username;
+            foreach (string favorite in currentUser.Favorites)
+            {
+                lstFav.Items.Add(favorite);
+            }
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK; // Notify the main form that the user logged out
+            this.Close();
         }
     }
+
 }

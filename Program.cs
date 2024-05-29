@@ -24,7 +24,7 @@ namespace WebBrowser
                 {
                     Content = new frmBrowser
                     {
-                        Text = "New Tab"
+                        Text = "Voogle"
                     }
                 }
             );
