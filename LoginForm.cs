@@ -21,6 +21,7 @@ namespace WebBrowser
         {
             InitializeComponent();
             userCredentials = credentials;
+            txtPassword.PasswordChar = '*'; // Set PasswordChar to '*' to hide the password
         }
 
         private void btnLogin_Click_1(object sender, EventArgs e)

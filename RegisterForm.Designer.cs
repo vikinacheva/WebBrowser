@@ -42,9 +42,9 @@
             this.btnRegister = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtPassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtUsername = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnLogin = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRegister
@@ -164,7 +164,7 @@
             this.txtPassword.IconRight = null;
             this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Lines = new string[0];
-            this.txtPassword.Location = new System.Drawing.Point(327, 163);
+            this.txtPassword.Location = new System.Drawing.Point(358, 173);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPassword.Modified = false;
@@ -238,7 +238,7 @@
             this.txtUsername.IconRight = null;
             this.txtUsername.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.Lines = new string[0];
-            this.txtUsername.Location = new System.Drawing.Point(327, 111);
+            this.txtUsername.Location = new System.Drawing.Point(358, 115);
             this.txtUsername.MaxLength = 32767;
             this.txtUsername.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtUsername.Modified = false;
@@ -284,38 +284,6 @@
             this.txtUsername.TextPlaceholder = "Enter username";
             this.txtUsername.UseSystemPasswordChar = false;
             this.txtUsername.WordWrap = true;
-            // 
-            // bunifuLabel2
-            // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bunifuLabel2.Location = new System.Drawing.Point(214, 173);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(86, 28);
-            this.bunifuLabel2.TabIndex = 6;
-            this.bunifuLabel2.Text = "Password:";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(206, 111);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(91, 28);
-            this.bunifuLabel1.TabIndex = 5;
-            this.bunifuLabel1.Text = "Username:";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // btnLogin
             // 
@@ -407,17 +375,37 @@
             this.btnLogin.UseDefaultRadiusAndThickness = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(208, 119);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 22);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Username";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(212, 173);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 22);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Password";
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.bunifuLabel2);
-            this.Controls.Add(this.bunifuLabel1);
             this.Name = "RegisterForm";
             this.Text = "RegisterForm";
             this.ResumeLayout(false);
@@ -430,8 +418,8 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnRegister;
         private Bunifu.UI.WinForms.BunifuTextBox txtPassword;
         private Bunifu.UI.WinForms.BunifuTextBox txtUsername;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLogin;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
