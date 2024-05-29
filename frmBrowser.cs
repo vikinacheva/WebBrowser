@@ -40,7 +40,7 @@ namespace WebBrowser
             btnRefresh.Image = imgRefresh.Image;
             txtSearchUrl.Text = webBrowser1.Url.AbsoluteUri;
         }
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnBack_Click_1(object sender, EventArgs e)
         {
             if (webBrowser1.CanGoBack) webBrowser1.GoBack();
         }
@@ -59,7 +59,7 @@ namespace WebBrowser
             webBrowser1.Refresh();
         }
 
-        private void btnFavourites_Click(object sender, EventArgs e)
+        private void btnFav_Click(object sender, EventArgs e)
         {
             if (currentUser == null)
             {
@@ -70,20 +70,38 @@ namespace WebBrowser
             // Add current URL to favorites
             currentUser.Favorites.Add(webBrowser1.Url.AbsoluteUri);
         }
+
         private void btnAccount_Click(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm(userCredentials);
-            if (loginForm.ShowDialog() == DialogResult.OK)
+            if (currentUser != null) // Check if user is already logged in
             {
-                // User logged in successfully, open AccountForm
-                currentUser = new UserAccount(loginForm.Username, loginForm.Password);
                 AccountForm accountForm = new AccountForm(currentUser);
-                accountForm.ShowDialog();
+                if (accountForm.ShowDialog() == DialogResult.OK)
+                {
+                    // If the account form was closed with OK result (logout), clear currentUser
+                    currentUser = null;
+                }
+            }
+            else
+            {
+                LoginForm loginForm = new LoginForm(userCredentials);
+                if (loginForm.ShowDialog() == DialogResult.OK)
+                {
+                    // User logged in successfully, open AccountForm
+                    currentUser = new UserAccount(loginForm.Username, loginForm.Password);
+                    AccountForm accountForm = new AccountForm(currentUser);
+                    if (accountForm.ShowDialog() == DialogResult.OK)
+                    {
+                        // If the account form was closed with OK result (logout), clear currentUser
+                        currentUser = null;
+                    }
+                }
             }
         }
 
+
         private void txtSearchUrl_KeyUp(object sender, KeyEventArgs e)
-        {
+        { 
             {
                 if (e.KeyCode == Keys.Enter && txtSearchUrl.Text.Trim().Length > 0)
                 {

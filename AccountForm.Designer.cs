@@ -123,19 +123,20 @@
             this.btnLogout.TextMarginLeft = 0;
             this.btnLogout.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnLogout.UseDefaultRadiusAndThickness = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
             // 
             // lblUsername
             // 
             this.lblUsername.AllowParentOverrides = false;
             this.lblUsername.AutoEllipsis = false;
+            this.lblUsername.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblUsername.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblUsername.Location = new System.Drawing.Point(342, 115);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblUsername.Size = new System.Drawing.Size(86, 20);
+            this.lblUsername.Size = new System.Drawing.Size(0, 0);
             this.lblUsername.TabIndex = 6;
-            this.lblUsername.Text = "bunifuLabel1";
             this.lblUsername.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblUsername.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -158,6 +159,7 @@
             this.Controls.Add(this.btnLogout);
             this.Name = "AccountForm";
             this.Text = "AccountForm";
+            this.Load += new System.EventHandler(this.AccountForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

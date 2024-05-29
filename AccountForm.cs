@@ -19,21 +19,44 @@ namespace WebBrowser
             InitializeComponent();
             currentUser = user;
         }
-
         private void AccountForm_Load(object sender, EventArgs e)
         {
-            lblUsername.Text = currentUser.Username;
-            foreach (string favorite in currentUser.Favorites)
+            // Refresh user info only if a user is logged in
+            if (currentUser != null)
             {
-                lstFav.Items.Add(favorite);
+                RefreshUserInfo();
             }
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
+
+        private void RefreshUserInfo()
         {
-            this.DialogResult = DialogResult.OK; // Notify the main form that the user logged out
+            if (currentUser != null)
+            {
+                lblUsername.Text = currentUser.Username;
+
+                lstFav.Items.Clear(); // Clear previous items
+                foreach (string favorite in currentUser.Favorites)
+                {
+                    lstFav.Items.Add(favorite);
+                }
+            }
+            else
+            {
+                // If currentUser is null, clear the controls
+                lblUsername.Text = "";
+                lstFav.Items.Clear();
+            }
+        }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+            // Clear currentUser only when the user explicitly logs out
+            currentUser = null;
+
+            // Close the account form
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
     }
-
 }

@@ -23,7 +23,7 @@ namespace WebBrowser
             userCredentials = credentials;
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click_1(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
@@ -31,7 +31,7 @@ namespace WebBrowser
             if (userCredentials.ContainsKey(username) && userCredentials[username] == password)
             {
                 MessageBox.Show("Login successful!");
-                this.DialogResult = DialogResult.OK;
+                this.DialogResult = DialogResult.OK; // Set DialogResult to OK only on successful login
                 this.Close();
             }
             else
@@ -39,6 +39,15 @@ namespace WebBrowser
                 MessageBox.Show("Invalid username or password. Please try again.");
             }
         }
-    }
 
+        private void btnRegister_Click_1(object sender, EventArgs e)
+        {
+            this.Hide(); // Hide the LoginForm before showing the RegisterForm
+            using (RegisterForm registerForm = new RegisterForm(userCredentials))
+            {
+                registerForm.ShowDialog();
+            }
+            this.Show(); // Show the LoginForm again after closing the RegisterForm
+        }
+    }
 }

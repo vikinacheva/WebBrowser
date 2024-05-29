@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBrowser));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.txtSearchUrl = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnAccount = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -105,26 +105,26 @@
             this.txtSearchUrl.Modified = false;
             this.txtSearchUrl.Multiline = false;
             this.txtSearchUrl.Name = "txtSearchUrl";
-            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(108)))), ((int)(((byte)(201)))));
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtSearchUrl.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtSearchUrl.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(138)))), ((int)(((byte)(207)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtSearchUrl.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtSearchUrl.OnIdleState = stateProperties12;
+            stateProperties21.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(108)))), ((int)(((byte)(201)))));
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearchUrl.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtSearchUrl.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(138)))), ((int)(((byte)(207)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearchUrl.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.Silver;
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearchUrl.OnIdleState = stateProperties24;
             this.txtSearchUrl.Padding = new System.Windows.Forms.Padding(3);
             this.txtSearchUrl.PasswordChar = '\0';
             this.txtSearchUrl.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -181,6 +181,7 @@
             this.btnAccount.WaitOnLoad = false;
             this.btnAccount.Zoom = 10;
             this.btnAccount.ZoomSpeed = 10;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // btnRefresh
             // 
@@ -215,6 +216,7 @@
             this.btnRefresh.WaitOnLoad = false;
             this.btnRefresh.Zoom = 10;
             this.btnRefresh.ZoomSpeed = 10;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnFav
             // 
@@ -251,6 +253,7 @@
             this.btnFav.WaitOnLoad = false;
             this.btnFav.Zoom = 10;
             this.btnFav.ZoomSpeed = 10;
+            this.btnFav.Click += new System.EventHandler(this.btnFav_Click);
             // 
             // btnForward
             // 
@@ -285,6 +288,7 @@
             this.btnForward.WaitOnLoad = false;
             this.btnForward.Zoom = 10;
             this.btnForward.ZoomSpeed = 10;
+            this.btnForward.Click += new System.EventHandler(this.btnForward_Click);
             // 
             // btnHome
             // 
@@ -320,6 +324,7 @@
             this.btnHome.WaitOnLoad = false;
             this.btnHome.Zoom = 10;
             this.btnHome.ZoomSpeed = 10;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnBack
             // 
@@ -355,6 +360,7 @@
             this.btnBack.WaitOnLoad = false;
             this.btnBack.Zoom = 10;
             this.btnBack.ZoomSpeed = 10;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
             // webBrowser1
             // 
