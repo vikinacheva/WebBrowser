@@ -117,17 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblUsername.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnLogout.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACRSURBVHhe7dKxAUBAAMBAk/zK7GcM/WMAFdJdcVXaLGOb
-        +9jOE/4z93uspwDfGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuE
-        sUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFILGOdx1OA19Z5XLF9Eabs0yP2
-        AAAAAElFTkSuQmCC
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIMSURBVHhe7dw9axRBGMDxKS0tLS39Aiab2z0OQfANJGkk
+        CoGARIIoWGrnB7AQC1tJq97N3l7Os7K09RtELI6dWV9OiG+QYp0ZLxHjiLfhnu4/8LtqrvuzO7uwjzq8
+        3naeHCsX9XqV6sdVlr+xia6Bw3wbpqW3TNLbnHT08Wk+8WUWuolp63fVhWLXXtmu7fqL2t5+CfzNt7Hq
+        Grk0+GpTXdmke36a0Z+rbPfvmTP9idkgJjS0OarN2WJStvXDaU6/VrhSuaiifwJmda7/yS7ptRCVP1NV
+        aV7aG6P4ZmBWN11DWf7Bnn56QplE3zGXix/RjUBT7mzuH/yU+3lmrg7jm4Cm3KHePzEqd6Lfsdc5sGNO
+        3O3QtPQ3Fd5LxDYAR+WaIizMH2FBBGFBBGFBBGFBBGFBBGFBBGFBBGFBBGFBBGFBBGFBBGFBBGFBBGFB
+        BGFBBGFBBGFBBGFBBGFBBGFBBGFBRAirpd/zeT3m5taoNoneUzbTr+waX0JjTvzHz6neUeVi765dKfai
+        m4CmVrf9l9BbLix90mb5xF/CohuBBsKMtYVuEkYZjVv5hr3Y/xzbCMzKLA92bdZ7EKLaX+GstTz4wpUL
+        R1GuFN9tR7/289amSf1e7tB133Tyj2GsERNo8B9hrOi1Ybj9Ve38UTSq/TVeen7Kz8wK4438Oy7gX1I9
+        Nlk+PDhTHSylfgIkttQwxXiAJgAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="lblUsername.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
 </root>
