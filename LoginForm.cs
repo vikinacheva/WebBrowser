@@ -36,7 +36,7 @@ namespace WebBrowser
             }
             else
             {
-                MessageBox.Show("Invalid username or password. Please try again.");
+                MessageBox.Show("Please try again.");
             }
         }
 

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.btnLogout = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.lblUsername = new Bunifu.UI.WinForms.BunifuLabel();
             this.lstFav = new System.Windows.Forms.ListBox();
@@ -54,11 +54,11 @@
             this.btnLogout.ColorContrastOnClick = 45;
             this.btnLogout.ColorContrastOnHover = 45;
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnLogout.CustomizableEdges = borderEdges1;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnLogout.CustomizableEdges = borderEdges4;
             this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLogout.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLogout.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -144,9 +144,9 @@
             // 
             this.lstFav.FormattingEnabled = true;
             this.lstFav.ItemHeight = 16;
-            this.lstFav.Location = new System.Drawing.Point(331, 193);
+            this.lstFav.Location = new System.Drawing.Point(152, 208);
             this.lstFav.Name = "lstFav";
-            this.lstFav.Size = new System.Drawing.Size(120, 84);
+            this.lstFav.Size = new System.Drawing.Size(492, 84);
             this.lstFav.TabIndex = 7;
             // 
             // AccountForm

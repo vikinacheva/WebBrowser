@@ -27,9 +27,7 @@ namespace WebBrowser
                 RefreshUserInfo();
             }
         }
-
-
-        private void RefreshUserInfo()
+        public void RefreshUserInfo()
         {
             if (currentUser != null)
             {
