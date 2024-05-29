@@ -34,13 +34,16 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.txtSearchUrl = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnAccount = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnRefresh = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnFav = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnForward = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnHome = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnBack = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.txtSearchUrl = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.imgSpinner = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.imgRefresh = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuCards1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +69,83 @@
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(1042, 77);
             this.bunifuCards1.TabIndex = 0;
+            // 
+            // txtSearchUrl
+            // 
+            this.txtSearchUrl.AcceptsReturn = false;
+            this.txtSearchUrl.AcceptsTab = false;
+            this.txtSearchUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearchUrl.AnimationSpeed = 200;
+            this.txtSearchUrl.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtSearchUrl.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtSearchUrl.BackColor = System.Drawing.Color.Transparent;
+            this.txtSearchUrl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtSearchUrl.BackgroundImage")));
+            this.txtSearchUrl.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(108)))), ((int)(((byte)(201)))));
+            this.txtSearchUrl.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtSearchUrl.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(138)))), ((int)(((byte)(207)))));
+            this.txtSearchUrl.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtSearchUrl.BorderRadius = 30;
+            this.txtSearchUrl.BorderThickness = 1;
+            this.txtSearchUrl.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtSearchUrl.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchUrl.DefaultFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtSearchUrl.DefaultText = "";
+            this.txtSearchUrl.FillColor = System.Drawing.Color.White;
+            this.txtSearchUrl.HideSelection = true;
+            this.txtSearchUrl.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtSearchUrl.IconLeft")));
+            this.txtSearchUrl.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchUrl.IconPadding = 10;
+            this.txtSearchUrl.IconRight = ((System.Drawing.Image)(resources.GetObject("txtSearchUrl.IconRight")));
+            this.txtSearchUrl.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchUrl.Lines = new string[0];
+            this.txtSearchUrl.Location = new System.Drawing.Point(258, 14);
+            this.txtSearchUrl.MaxLength = 32767;
+            this.txtSearchUrl.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtSearchUrl.Modified = false;
+            this.txtSearchUrl.Multiline = false;
+            this.txtSearchUrl.Name = "txtSearchUrl";
+            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(108)))), ((int)(((byte)(201)))));
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearchUrl.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtSearchUrl.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(138)))), ((int)(((byte)(207)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearchUrl.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearchUrl.OnIdleState = stateProperties12;
+            this.txtSearchUrl.Padding = new System.Windows.Forms.Padding(3);
+            this.txtSearchUrl.PasswordChar = '\0';
+            this.txtSearchUrl.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtSearchUrl.PlaceholderText = "Enter URL";
+            this.txtSearchUrl.ReadOnly = false;
+            this.txtSearchUrl.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSearchUrl.SelectedText = "";
+            this.txtSearchUrl.SelectionLength = 0;
+            this.txtSearchUrl.SelectionStart = 0;
+            this.txtSearchUrl.ShortcutsEnabled = true;
+            this.txtSearchUrl.Size = new System.Drawing.Size(631, 51);
+            this.txtSearchUrl.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtSearchUrl.TabIndex = 5;
+            this.txtSearchUrl.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSearchUrl.TextMarginBottom = 0;
+            this.txtSearchUrl.TextMarginLeft = 3;
+            this.txtSearchUrl.TextMarginTop = 0;
+            this.txtSearchUrl.TextPlaceholder = "Enter URL";
+            this.txtSearchUrl.UseSystemPasswordChar = false;
+            this.txtSearchUrl.WordWrap = true;
+            this.txtSearchUrl.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearchUrl_KeyUp);
             // 
             // btnAccount
             // 
@@ -240,7 +320,6 @@
             this.btnHome.WaitOnLoad = false;
             this.btnHome.Zoom = 10;
             this.btnHome.ZoomSpeed = 10;
-            this.btnHome.Click += new System.EventHandler(this.bunifuImageButton4_Click);
             // 
             // btnBack
             // 
@@ -277,81 +356,88 @@
             this.btnBack.Zoom = 10;
             this.btnBack.ZoomSpeed = 10;
             // 
-            // txtSearchUrl
+            // webBrowser1
             // 
-            this.txtSearchUrl.AcceptsReturn = false;
-            this.txtSearchUrl.AcceptsTab = false;
-            this.txtSearchUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchUrl.AnimationSpeed = 200;
-            this.txtSearchUrl.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtSearchUrl.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtSearchUrl.BackColor = System.Drawing.Color.Transparent;
-            this.txtSearchUrl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtSearchUrl.BackgroundImage")));
-            this.txtSearchUrl.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(108)))), ((int)(((byte)(201)))));
-            this.txtSearchUrl.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtSearchUrl.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(138)))), ((int)(((byte)(207)))));
-            this.txtSearchUrl.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtSearchUrl.BorderRadius = 30;
-            this.txtSearchUrl.BorderThickness = 1;
-            this.txtSearchUrl.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtSearchUrl.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchUrl.DefaultFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtSearchUrl.DefaultText = "";
-            this.txtSearchUrl.FillColor = System.Drawing.Color.White;
-            this.txtSearchUrl.HideSelection = true;
-            this.txtSearchUrl.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtSearchUrl.IconLeft")));
-            this.txtSearchUrl.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchUrl.IconPadding = 10;
-            this.txtSearchUrl.IconRight = ((System.Drawing.Image)(resources.GetObject("txtSearchUrl.IconRight")));
-            this.txtSearchUrl.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchUrl.Lines = new string[0];
-            this.txtSearchUrl.Location = new System.Drawing.Point(258, 21);
-            this.txtSearchUrl.MaxLength = 32767;
-            this.txtSearchUrl.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtSearchUrl.Modified = false;
-            this.txtSearchUrl.Multiline = false;
-            this.txtSearchUrl.Name = "txtSearchUrl";
-            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(108)))), ((int)(((byte)(201)))));
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtSearchUrl.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtSearchUrl.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(138)))), ((int)(((byte)(207)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtSearchUrl.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtSearchUrl.OnIdleState = stateProperties12;
-            this.txtSearchUrl.Padding = new System.Windows.Forms.Padding(3);
-            this.txtSearchUrl.PasswordChar = '\0';
-            this.txtSearchUrl.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtSearchUrl.PlaceholderText = "Enter URL";
-            this.txtSearchUrl.ReadOnly = false;
-            this.txtSearchUrl.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtSearchUrl.SelectedText = "";
-            this.txtSearchUrl.SelectionLength = 0;
-            this.txtSearchUrl.SelectionStart = 0;
-            this.txtSearchUrl.ShortcutsEnabled = true;
-            this.txtSearchUrl.Size = new System.Drawing.Size(631, 51);
-            this.txtSearchUrl.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtSearchUrl.TabIndex = 5;
-            this.txtSearchUrl.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtSearchUrl.TextMarginBottom = 0;
-            this.txtSearchUrl.TextMarginLeft = 3;
-            this.txtSearchUrl.TextMarginTop = 0;
-            this.txtSearchUrl.TextPlaceholder = "Enter URL";
-            this.txtSearchUrl.UseSystemPasswordChar = false;
-            this.txtSearchUrl.WordWrap = true;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 74);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(1039, 536);
+            this.webBrowser1.TabIndex = 1;
+            this.webBrowser1.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.webBrowser1_Navigated);
+            this.webBrowser1.Navigating += new System.Windows.Forms.WebBrowserNavigatingEventHandler(this.webBrowser1_Navigating);
+            // 
+            // imgSpinner
+            // 
+            this.imgSpinner.ActiveImage = null;
+            this.imgSpinner.AllowAnimations = true;
+            this.imgSpinner.AllowBuffering = false;
+            this.imgSpinner.AllowToggling = false;
+            this.imgSpinner.AllowZooming = true;
+            this.imgSpinner.AllowZoomingOnFocus = false;
+            this.imgSpinner.BackColor = System.Drawing.Color.Transparent;
+            this.imgSpinner.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.imgSpinner.ErrorImage = ((System.Drawing.Image)(resources.GetObject("imgSpinner.ErrorImage")));
+            this.imgSpinner.FadeWhenInactive = false;
+            this.imgSpinner.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.imgSpinner.Image = ((System.Drawing.Image)(resources.GetObject("imgSpinner.Image")));
+            this.imgSpinner.ImageActive = null;
+            this.imgSpinner.ImageLocation = null;
+            this.imgSpinner.ImageMargin = 10;
+            this.imgSpinner.ImageSize = new System.Drawing.Size(34, 41);
+            this.imgSpinner.ImageZoomSize = new System.Drawing.Size(44, 51);
+            this.imgSpinner.InitialImage = ((System.Drawing.Image)(resources.GetObject("imgSpinner.InitialImage")));
+            this.imgSpinner.Location = new System.Drawing.Point(105, 514);
+            this.imgSpinner.Name = "imgSpinner";
+            this.imgSpinner.Rotation = 0;
+            this.imgSpinner.ShowActiveImage = true;
+            this.imgSpinner.ShowCursorChanges = true;
+            this.imgSpinner.ShowImageBorders = true;
+            this.imgSpinner.ShowSizeMarkers = false;
+            this.imgSpinner.Size = new System.Drawing.Size(44, 51);
+            this.imgSpinner.TabIndex = 5;
+            this.imgSpinner.ToolTipText = "Refresh";
+            this.imgSpinner.Visible = false;
+            this.imgSpinner.WaitOnLoad = false;
+            this.imgSpinner.Zoom = 10;
+            this.imgSpinner.ZoomSpeed = 10;
+            // 
+            // imgRefresh
+            // 
+            this.imgRefresh.ActiveImage = null;
+            this.imgRefresh.AllowAnimations = true;
+            this.imgRefresh.AllowBuffering = false;
+            this.imgRefresh.AllowToggling = false;
+            this.imgRefresh.AllowZooming = true;
+            this.imgRefresh.AllowZoomingOnFocus = false;
+            this.imgRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.imgRefresh.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.imgRefresh.ErrorImage = ((System.Drawing.Image)(resources.GetObject("imgRefresh.ErrorImage")));
+            this.imgRefresh.FadeWhenInactive = false;
+            this.imgRefresh.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.imgRefresh.Image = ((System.Drawing.Image)(resources.GetObject("imgRefresh.Image")));
+            this.imgRefresh.ImageActive = null;
+            this.imgRefresh.ImageLocation = null;
+            this.imgRefresh.ImageMargin = 10;
+            this.imgRefresh.ImageSize = new System.Drawing.Size(34, 41);
+            this.imgRefresh.ImageZoomSize = new System.Drawing.Size(44, 51);
+            this.imgRefresh.InitialImage = ((System.Drawing.Image)(resources.GetObject("imgRefresh.InitialImage")));
+            this.imgRefresh.Location = new System.Drawing.Point(44, 514);
+            this.imgRefresh.Name = "imgRefresh";
+            this.imgRefresh.Rotation = 0;
+            this.imgRefresh.ShowActiveImage = true;
+            this.imgRefresh.ShowCursorChanges = true;
+            this.imgRefresh.ShowImageBorders = true;
+            this.imgRefresh.ShowSizeMarkers = false;
+            this.imgRefresh.Size = new System.Drawing.Size(44, 51);
+            this.imgRefresh.TabIndex = 6;
+            this.imgRefresh.ToolTipText = "Refresh";
+            this.imgRefresh.Visible = false;
+            this.imgRefresh.WaitOnLoad = false;
+            this.imgRefresh.Zoom = 10;
+            this.imgRefresh.ZoomSpeed = 10;
             // 
             // frmBrowser
             // 
@@ -359,11 +445,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1041, 607);
+            this.Controls.Add(this.imgRefresh);
+            this.Controls.Add(this.imgSpinner);
+            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.bunifuCards1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBrowser";
-            this.Text = "frmBrowser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.bunifuCards1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -379,5 +468,8 @@
         private Bunifu.UI.WinForms.BunifuImageButton btnFav;
         private Bunifu.UI.WinForms.BunifuImageButton btnHome;
         private Bunifu.UI.WinForms.BunifuTextBox txtSearchUrl;
+        private System.Windows.Forms.WebBrowser webBrowser1;
+        private Bunifu.UI.WinForms.BunifuImageButton imgSpinner;
+        private Bunifu.UI.WinForms.BunifuImageButton imgRefresh;
     }
 }
